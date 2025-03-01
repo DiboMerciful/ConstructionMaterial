@@ -23,9 +23,13 @@ public class Materials extends javax.swing.JFrame {
     /**
      * Creates new form Materials
      */
-    public Materials() {
+    public void showMaterialsPage(){
+        System.out.println("Welcome to the materials page");
+    }
+        public Materials() {
         initComponents();
         table_update();
+        
     }
 
     /**

@@ -8,6 +8,7 @@ package com.mycompany.constructionmaterialstockmanagementapplication.ba2a;
  *
  * @author DIBO MERCIFUL
  */
+import UI.StockManager;
 import UI.User;
 public class ConstructionMaterialStockManagementApplicationBA2A {
 

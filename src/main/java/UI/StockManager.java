@@ -17,16 +17,18 @@ import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import UI.Materials;
 public class StockManager extends javax.swing.JFrame {
-
-    /**
-     * Creates new form StockManager
-     */
-    public StockManager() {
+    private Materials materials;
+    public StockManager(){
+        materials = new Materials();
         initComponents();
         table_update();
     }
-
+    /**
+     * Creates new form StockManager
+     */
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -144,10 +146,12 @@ public class StockManager extends javax.swing.JFrame {
 
     /**
      * @param args the command line arguments
+     * @param StockManager
      */
-    public static void main(String args[]) {
+    public static void main(String args[],  StockManager StockManager) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        StockManager = new StockManager();
+       StockManager.User();//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
@@ -185,4 +189,8 @@ public class StockManager extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
+
+    public void User() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
