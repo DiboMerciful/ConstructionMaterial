@@ -147,11 +147,17 @@ public class User extends javax.swing.JFrame {
               Ad.setLocationRelativeTo(null);
               this.dispose();
               }
+              if(role.equals("STOCKMANAGER")){
+              Stockmanager Ad = new Stockmanager();
+              Ad.setVisible(true);
+              Ad.setLocationRelativeTo(null);
+              this.dispose();
+              }
 
              }else{
                 
                 JOptionPane.showMessageDialog(new  JFrame(), "Something went wrong Check Role, password and Email again",
-                " Error has occure ", JOptionPane.ERROR_MESSAGE);
+                " Error has occured ", JOptionPane.ERROR_MESSAGE);
           }
         }catch(Exception e){
             System.out.println("Error!"+e.getMessage());
@@ -208,4 +214,18 @@ public class User extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
+
+    private static class Stockmanager {
+
+        public Stockmanager() {
+        }
+
+        private void setVisible(boolean b) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        private void setLocationRelativeTo(Object object) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
 }

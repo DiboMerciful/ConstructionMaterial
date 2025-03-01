@@ -305,8 +305,7 @@ public class Materials extends javax.swing.JFrame {
             Quantity.setText("");
             table_update();
            }
-        } catch (ClassNotFoundException ex) {   
-        } catch (SQLException ex) {     
+        } catch (ClassNotFoundException | SQLException ex) {     
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
